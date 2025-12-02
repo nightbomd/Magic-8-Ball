@@ -10,17 +10,19 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="d-flex flex-column min-vh-100 text-center p-5">
+<body class="d-flex flex-column min-vh-100 text-center p-5 bg-primary text-white">
   <header>
   </header>
   <main class="container text-center my-auto">
+    <img src="8-ball.png" alt="magic 8 ball" class="img img-fluid ball" id="ball-img">
     <h1>Magic 8 ball app</h1>
     <p id="response-text">Ask the 8-ball a question...</p>
     <img src="" alt="" id="reponse-img" class="img img-fluid">
-    <button id="shakeBtn" class="btn btn-primary">Shake the Magic 8 Ball</button>
+    <button id="shakeBtn" class="btn btn-primary">Drag the ball to shake it</button>
     <div class="p-3">
       <p id="question-output"></p>
       <p id="output"></p>
+      <img src="" alt="" id="response-img" class="img img-fluid text-center" style="display:none">
     </div>
   </main>
   <footer>
