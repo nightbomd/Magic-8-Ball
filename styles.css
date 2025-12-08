@@ -3,9 +3,19 @@
   font-weight: bold;
 }
 
-.btn-primary {
+span, h2 {
   background-color: #ff7c02 !important;
   border-color: #db9b10 !important;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 1.5rem;
 }
 
 .ball {
@@ -18,8 +28,14 @@
   animation: shake 0.5s infinite;
 }
 
+#ball-img {
+  height: 250px;
+  width: auto;
+  margin: 0 auto;
+}
+
 #response-img {
-  width: 300px;
+  width: 550px;
   margin-top: 20px;
   border-radius: 10px;
   height: 300px;
