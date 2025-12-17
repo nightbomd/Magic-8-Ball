@@ -71,6 +71,23 @@ eightBallImg.addEventListener("mousedown", () => {
         }
     }, 300);
 });
+
+eightBallImg.addEventListener("pointerdown", () => {
+    let timer = 0;
+
+    const interval = setInterval(() => {
+        output.innerText = "Shaking the Magic 8 Ball" + ".".repeat(timer % 4);
+        timer++;
+
+        if (timer > 8) {
+            clearInterval(interval);
+            eightBallImg.classList.remove("shake");
+            shakeMagic8Ball();
+        } else {
+            eightBallImg.classList.add("shake");
+        }
+    }, 300);
+});
 // clear when refreshing
 window.addEventListener("load", () => {
     output.innerText = ""
